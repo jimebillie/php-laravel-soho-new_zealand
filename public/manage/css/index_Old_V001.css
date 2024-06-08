@@ -1,0 +1,252 @@
+
+.wrap__bgimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c8197a;
+}
+
+.imgfooter {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    animation-name: imgfooter;
+    animation-duration: 1s;
+}
+
+.imgfooter img {
+    width: 530px;
+}
+
+.wrap__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: wrap__logo__img;
+    animation-duration: 1s;
+}
+
+.wrap__logo_2{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: none;
+    justify-content: center;
+
+}
+
+.hams_clk {
+    animation-name: hams_logo_up;
+    animation-duration: 1s;
+}
+
+@keyframes hams_logo_up {
+    0% {
+        top: 100px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.wrap__logo img {
+    width: 350px;
+    filter: drop-shadow(0 1px 5px gray);
+}
+
+.wrap__logo_2 img {
+    width: 120px;
+    filter: drop-shadow(0 1px 5px gray);
+}
+
+@media screen and (max-width: 768px) {
+    .imgfooter img {
+        width: 400px;
+    }
+
+    .wrap__logo img {
+        width: 200px;
+    }
+
+    .wrap__logo_2 img {
+        width: 100px;
+
+    }
+
+}
+
+@keyframes wrap__logo__img {
+    0% {
+        bottom: -50px;
+    }
+    100% {
+        bottom: 100px;
+    }
+}
+
+@keyframes imgfooter {
+    0% {
+        right: -100px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.wrap__nav {
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+    transition: 0.5s;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.wrap__hams {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.wrap__hams:hover {
+    transform: scale(1.2);
+}
+
+.wrap__hams .items {
+    width: 40px;
+    height: 5px;
+    background-color: #d5d5d5;
+    margin: 5px 0;
+    border-radius: 5px;
+    filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.25));
+}
+
+.wrap__menu {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(200, 25, 122);
+    /*background-color: rgb(121, 78, 102);*/
+    color: #d5d5d5;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 0 0 ;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    overflow: auto;
+    font-weight: bold;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.wrap__menu__act {
+    display: flex;
+    animation-name: wrap__menu__act;
+    animation-duration: 0.5s;
+}
+
+.wrap__menu__del {
+    display: flex;
+    top: 1500px;
+    animation-name: wrap__menu__del;
+    animation-duration: 0.5s;
+}
+
+.wrap__menu .items {
+    margin: 13px 0;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}
+
+.wrap__menu .items:before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #d5d5d5;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.wrap__menu .items:hover:before {
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.wrap__contain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 70px 0;
+    animation-name: wrap__contain;
+    animation-duration: 0.8s;
+}
+
+.container__wrap {
+    width: 100%;
+    height: 108%;
+    overflow-y: scroll;
+    color: aliceblue;
+}
+
+@keyframes wrap__contain {
+    0% {
+        top: 50px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes wrap__menu__act {
+    0% {
+        top: 1500px
+    }
+    100% {
+        top: 100px
+    }
+}
+
+@keyframes wrap__menu__del {
+    0% {
+        top: 100px;
+        display: flex;
+    }
+    100% {
+        top: 1500px;
+    }
+}

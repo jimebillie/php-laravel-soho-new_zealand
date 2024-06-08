@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+
+* {
+    font-family: roboto;
+}
+
+.wrap__alllogin {
+    /*background-color: black;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.wrap__coverimg {
+    width: 75%;
+    height: 100vh;
+}
+
+.wrap__coverimg img {
+    width: 100%;
+    height: 100vh;
+    object-position: center;
+    object-fit: cover;
+}
+
+.wrap__right {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.wrap__login {
+    width: 85%;
+}
+
+.wrap__login__row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap__login__row2 {
+    color: #3b3b3b;
+}
+
+.wrap__login__row3, .wrap__login__row4 {
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+button[type='submit'] {
+    background-color: red;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: unset;
+    font-weight: bold;
+    color: #eeeeee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type='submit']:hover {
+    filter: grayscale(0.2);
+}
+
+.wrap__version {
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    .wrap__coverimg {
+        display: none;
+    }
+
+    .wrap__right {
+        width: 100%;
+    }
+}
+
+
+
+

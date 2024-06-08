@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+
+* {
+    font-family: roboto;
+    color: #3b3b3b;
+}
+
+body {
+    margin: 0;
+}
+
+.wrap__all {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 1px 0 gray;
+    padding: 10px;
+}
+
+.wrap__bars {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.wrap__bars i:active {
+    transform: translate(1px) scale(1.09);
+    color: #494949;
+}
+
+.wrap__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.wrap__sidebar {
+    width: 20%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 1px 0 gray;
+}
+
+.wrap__content {
+flex-grow: 1;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.wrap__sidebar__in, .wrap__content__in {
+    margin: 10px;
+    padding: 0 0 50px;
+}
+
+.wrap__logout > button {
+    background-color: #06124d;
+    cursor: pointer;
+    border-radius: 3px;
+    border: unset;
+    padding: 5px;
+    width: 100%;
+    margin: 6px 0;
+    color: white;
+}
+
+.wrap__logout > button:hover {
+    filter: grayscale(0.3);
+}
+
+.wrap__title {
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    padding: 6px 0;
+}
+
+.wrap__menu__item{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.wrap__menu > a{
+    text-decoration: none;
+}
+.wrap__menu__item > i {
+    background-color: #3b3b3b;
+    color: white;
+    padding: 6px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.wrap__menu__item > span {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .wrap__sidebar{
+        display: none;
+    }
+    .wrap__sidebar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 70%;
+    }
+}
+
+

@@ -1,0 +1,35 @@
+.wrapImgContact{
+    margin-bottom: 50px;
+}
+.wrapImgContact>img{
+    width: 100%;
+}
+.wrapHeadTopic{
+    color: papayawhip;
+    text-align: center;
+}
+.wrapHeadTopic >.row>.col-md> p > a{
+    color: unset;
+}
+.wrapHeadTopic>h2,.wrapHeadTopic>h3{
+    margin-bottom: 30px;
+}
+.wrapHeadTopic>.row>.col-md>h3,.wrapHeadTopic>h2,.wrapHeadTopic>h1{
+    color: var(--color-yellow-100);
+}
+.wrapMapContact{
+    margin: 50px 0;
+}
+.wrapMapContact>iframe{
+    width: 100%;
+    height: 400px;
+}
+.wrapContactFooter{
+    margin: 50px 0;
+}
+.wrapContactFooter>h3{
+    color: var(--color-yellow-100);
+}
+.wrapContactFooter>p>a{
+   color: unset;
+}

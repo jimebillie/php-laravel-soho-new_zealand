@@ -1,0 +1,32 @@
+.wrap_social {
+    flex-direction: column;
+    font-size: 1.8rem;
+    align-items: end;
+    margin-right: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 125px 20px;
+}
+
+.container__wrap {
+    position: relative;
+    overflow-x: hidden;
+}
+.wrap_map_contact{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+.wrap_map_contact iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .wrap_social {
+        padding: 130px 40px 130px 40px;
+    }
+}

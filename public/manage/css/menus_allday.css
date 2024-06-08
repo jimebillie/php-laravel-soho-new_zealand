@@ -1,0 +1,37 @@
+
+.wrap__content {
+    background-color: whitesmoke;
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 5px;
+    padding: 40px 25px;
+    color: #3b3b3b;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+
+.wrap__name__menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    font-size: 1.3rem;
+}
+
+.name__menu {
+    background-color: whitesmoke;
+    position: absolute;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.line__name__menu {
+    width: 100%;
+    min-height: 1px;
+    background-color: #3b3b3b;
+}
+
+.wrap__sub__menu {
+    text-align: center;
+    margin: 30px 0;
+}

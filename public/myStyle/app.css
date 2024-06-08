@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*font-family: 'Bebas Neue', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+/*font-family: 'Inconsolata', monospace;*/
+
+
+/* สี */
+:root {
+    --main-bg-color: #062e5d;
+    --color-yellow-100: #d9bd3e;
+    --color-yellow-50: rgba(217, 189, 62, 0.5);
+    --color-yellow-80: rgba(217, 189, 62, 0.8);
+}
+
+/* z-index */
+:root {
+    --z-index-1: 100;
+    --z-index-2: 200;
+    --z-index-3: 300;
+    --z-index-4: 400;
+    --z-index-5: 500;
+}
+
+/* Body Web */
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-index-5);
+    background-color: var(--main-bg-color);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);
+    animation-name: header;
+    animation-duration: 0.2s;
+}
+
+/* Header Class Fixed */
+header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation-name: headerFixed;
+    animation-duration: 0.2s;
+}
+
+@keyframes header {
+    0% {
+        opacity: 0.01;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes headerFixed {
+    0% {
+        opacity: 0.01;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container{
+    width:65%;
+}
+@media (max-width: 768px){
+    .container{
+        width:95%;
+    }
+}
+
+.wrapNevRight {
+    display: flex;
+    align-items: center;
+}
+.wrap_nav_social{
+    display: flex;
+    margin-right: 15px;
+}
+.wrap_nav_social>i{
+    font-size: 25px;
+    margin: 0 5px;
+    color: papayawhip;
+    cursor: pointer;
+}
+@media (max-width: 400px) {
+    .wrap_nav_social>i{
+        font-size: 15px;
+        margin: 0 5px;
+    }
+    .wrap_nav_social{
+        margin-right: 10px;
+    }
+}
+
+.wrapNevRight > .wrapBtnBooking > a {
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: unset;
+    color: var(--color-yellow-100);
+    border: 2px solid var(--color-yellow-100);
+    margin-right: 20px;
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+
+.wrapNevRight > .wrapBtnBooking > a:hover {
+    background-color: rgba(217, 189, 62, 0.9);
+    color: white;
+    border: 2px solid white;
+}
+
+
+
+/* Logo */
+.wrapLogo img {
+    width: 80px;
+    transition: 0.3s;
+}
+
+.wrapLogo img:hover {
+    transform: scale(1.05);
+}
+
+/* wrapHamsMenu*/
+.wrapNevRight > .wrapHamsMenu {
+    transition: 0.1s;
+}
+
+/* Make Scale wrapHamsMenu on mouse hover */
+.wrapNevRight > .wrapHamsMenu:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+/* Hamburger Menu All*/
+.wrapNevRight > .wrapHamsMenu > div {
+    width: 30px;
+    min-height: 3px;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: var(--color-yellow-100);
+}
+
+/* Hamburger Menu in Div 2*/
+.wrapNevRight > .wrapHamsMenu > div:nth-child(2), .wrapNevRight > .wrapHamsMenu > div:nth-child(3) {
+    background-color: var(--color-yellow-50);
+}
+
+/* Menu on click hamburger bar */
+#headerBottom {
+    display: none;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px 0 50px 0;
+    color: papayawhip;
+}
+
+.wrapTopicFooter {
+    color: var(--color-yellow-100);
+}
+
+.wrapLinkHeader{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.wrapLinkHeader > a {
+    text-decoration: none;
+    color: unset;
+    margin: 6px 0;
+}
+
+.wrapLinkFooter {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.wrapLinkFooter > a {
+    text-decoration: none;
+    color: unset;
+}
+
+.wrapContent{
+    min-height: 80vh;
+    padding-top: 50px;
+}
+
+

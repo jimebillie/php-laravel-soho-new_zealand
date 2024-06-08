@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+.wrap__content {
+    /*background-color: whitesmoke;*/
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 5px;
+    padding: 40px 25px;
+    color: #3b3b3b;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+.wrap_bg_img {
+    position: relative;
+}
+.wrap_bg_img > img{
+    width: 100%;
+}
+.wrap_over_bgImage{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.wrap_text_content{
+    position: absolute;
+    width: 100%;
+    padding: 30px 35px;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+.wrap_text_content > p > a{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .wrap_text_content {
+        font-size: 14px;
+    }
+    .wrap__content {
+        min-height: unset;
+    }
+}
+@media (max-width: 500px) {
+    .wrap_text_content {
+        padding: 15px 20px;
+        font-size: 12px;
+    }
+}
